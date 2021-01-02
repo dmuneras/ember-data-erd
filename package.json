@@ -1,13 +1,16 @@
 {
   "name": "ember-data-erd",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "1.0.0-alpha",
+  "description": "Ember addon to generate Entity relationship diagrams from the source code when using Ember data",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "erd",
+    "ember-data",
+    "ember-data-model-fragments"
   ],
-  "repository": "",
+  "repository": "https://github.com/dmuneras/ember-data-erd",
   "license": "MIT",
-  "author": "",
+  "author": "Daniel Munera Sanchez (dmuneras)",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -21,7 +24,9 @@
     "test:all": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^7.1.2"
+    "ember-cli-babel": "^7.1.2",
+    "execa": "^5.0.0",
+    "graphviz": "0.0.9"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.6.3",
@@ -46,8 +51,7 @@
     "ember-try": "^1.0.0",
     "eslint-plugin-ember": "^5.2.0",
     "eslint-plugin-node": "^7.0.1",
-    "loader.js": "^4.7.0",
-    "qunit-dom": "^0.8.0"
+    "loader.js": "^4.7.0"
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"

@@ -14,7 +14,14 @@ module.exports = {
   env: {
     browser: true
   },
+  globals: {
+    require: true,
+    module: true,
+    process: true
+  },
   rules: {
+    'no-debugger': 'off',
+    'no-console' : 'off'
   },
   overrides: [
     // node files
@@ -45,7 +52,7 @@ module.exports = {
       },
       plugins: ['node'],
       rules: Object.assign({}, require('eslint-plugin-node').configs.recommended.rules, {
-        // add your custom rules and overrides for node files here
+        'no-debugger': 'warn'
       })
     }
   ]
