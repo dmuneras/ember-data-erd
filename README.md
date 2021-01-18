@@ -42,7 +42,7 @@ Run the following command in the root of the project.
 
 By default the library is going to generate a PNG image in a diagrams
 folder. If the diagrams folder is not created, it will be created in the
-route folder of the project.
+root folder of the project.
 
 In order to modify the behaviour of the library it is possible to use a
 configuration file. The configuration file should be called:
