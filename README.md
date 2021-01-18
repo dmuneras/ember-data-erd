@@ -20,7 +20,7 @@ ember install ember-data-erd
 Compatibility
 ------------------------------------------------------------------------------
 
-The library only supports the old way to define Ember models.
+The library has basic supports for the following ways to define models:
 
 ```
   export default Model.extend({
@@ -28,8 +28,42 @@ The library only supports the old way to define Ember models.
   }
 ```
 
-Native JS classes + decorators are not supported, but it is the next code
-analyzer to implement according to the project plans.
+```
+  import Model, { attr, hasMany } from '@ember-data/model';
+
+  export default class ClientModel extends Model {
+    @attr name;
+
+    @hasMany pets;
+  }
+```
+
+```
+  import Model, { attr, hasMany } from '@ember-data/model';
+
+  export default class ClientModel extends Model {
+    @attr name;
+
+    @hasMany('pet') pets;
+  }
+```
+
+```
+  import Model, { attr, hasMany } from '@ember-data/model';
+
+  export default class ClientModel extends Model {
+    @attr name;
+
+    @hasMany('pet')
+    pets;
+  }
+```
+
+This is still in a very early stage, so, errors parsing the source code might
+happen. If you find one, please report it as an issue in the repo.
+
+Thanks!
+
 
 Usage
 ------------------------------------------------------------------------------
