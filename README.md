@@ -71,7 +71,10 @@ The supported options are:
       'user',
       'userGroup'
     ],
-    outputFormat: 'pdf'
+    outputFormat: 'pdf',
+    graphviz: {
+      concentrate: false // https://graphviz.org/doc/info/attrs.html#d:concentrate
+    }
   }
 ```
 
