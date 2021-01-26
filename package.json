@@ -23,7 +23,6 @@
     "test:all": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^7.1.2",
     "execa": "^5.0.0",
     "graphviz": "0.0.9"
   },
