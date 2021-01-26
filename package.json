@@ -1,6 +1,6 @@
 {
   "name": "ember-data-erd",
-  "version": "1.1.1-alpha",
+  "version": "1.1.2-alpha",
   "description": "Ember addon to generate Entity relationship diagrams from the source code when using Ember data",
   "keywords": [
     "ember-addon",
