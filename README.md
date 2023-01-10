@@ -22,13 +22,13 @@ Compatibility
 
 The library has basic supports for the following ways to define models:
 
-```
+```js
   export default Model.extend({
     name: attr()
   }
 ```
 
-```
+```js
   import Model, { attr, hasMany } from '@ember-data/model';
 
   export default class ClientModel extends Model {
@@ -38,7 +38,7 @@ The library has basic supports for the following ways to define models:
   }
 ```
 
-```
+```js
   import Model, { attr, hasMany } from '@ember-data/model';
 
   export default class ClientModel extends Model {
@@ -48,7 +48,7 @@ The library has basic supports for the following ways to define models:
   }
 ```
 
-```
+```js
   import Model, { attr, hasMany } from '@ember-data/model';
 
   export default class ClientModel extends Model {
