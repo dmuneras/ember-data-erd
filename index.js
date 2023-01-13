@@ -18,11 +18,13 @@ module.exports = {
         run() {
           console.log(`\nGENERATING DIAGRAM...\n`);
 
-          const { stdout } = execa.sync('node', ['./node_modules/ember-data-erd/bin/generate-diagram.js']);
+          const { stdout } = execa.sync('node', [
+            './node_modules/ember-data-erd/bin/generate-diagram.js',
+          ]);
 
           console.log(stdout);
-        }
+        },
       },
-    }
-  }
+    };
+  },
 };
