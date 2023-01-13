@@ -4,9 +4,9 @@
   which blocks Graphviz from executing its logic.
 */
 
-import DiagramGenerator from '../lib/generators/erd-generator';
-import ConfigFileReader from '../lib/config-reader';
-const configFileReader = new ConfigFileReader();
+const DiagramGenerator = require('../lib/generators/erd-generator');
+const ConfigFileReader = require('../lib/config-reader');
+const configFileReader =  new ConfigFileReader();
 const options = configFileReader.readOptions();
 const generator = new DiagramGenerator(options);
 
